@@ -1,5 +1,4 @@
 #include "stats.h"
-#include "iostream"
 #include <algorithm>
 using namespace Statistics;
 
