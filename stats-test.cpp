@@ -31,9 +31,9 @@ TEST_CASE("average is NaN for empty array") {
 	std::cout << "All fields of computedStats (average, max, min) = NAN " << "\n";
 	std::cout << "\n";
 	*/
-	REQUIRE(std::abs(isnan(computedStats.average) == 1) );
-	REQUIRE(std::abs(isnan(computedStats.max )    == 1) );
-	REQUIRE(std::abs(isnan(computedStats.min )    == 1) );
+	REQUIRE(std::abs(std::isnan(computedStats.average) == 1) );
+	REQUIRE(std::abs(std::isnan(computedStats.max )    == 1) );
+	REQUIRE(std::abs(std::isnan(computedStats.min )    == 1) );
 
 	//Use http://www.cplusplus.com/reference/cmath/isnan/
 }
