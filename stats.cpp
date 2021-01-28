@@ -1,6 +1,6 @@
 #include "stats.h"
 #include <algorithm>
-#include <limits>
+#include <cmath>
 using namespace Statistics;
 
 Stats Statistics::ComputeStatistics(const std::vector<double>& V) {
