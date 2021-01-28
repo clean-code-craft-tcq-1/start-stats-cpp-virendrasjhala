@@ -10,7 +10,7 @@ Stats Statistics::ComputeStatistics(const std::vector<double>& V) {
 		s.max = NAN;
 		s.min = NAN;
 		s.average = NAN;
-		return s;
+		
 	}
 	else 
 	{
