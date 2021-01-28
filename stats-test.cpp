@@ -52,5 +52,6 @@ TEST_CASE("raises alerts when max is greater than threshold") {
 	std::cout << "\n";
 	*/
 	REQUIRE(emailAlert.emailSent);
-	REQUIRE(ledAlert.ledGlows);	
+	REQUIRE(ledAlert.ledGlows);
+	
 }
