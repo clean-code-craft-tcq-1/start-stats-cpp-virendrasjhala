@@ -3,14 +3,15 @@ name: Build and Run
 on: [push, pull_request]
 
 jobs:
-  build:
+  ubuntu-build:
 
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2.0.0
     - name: build
       run: g++ -Wall -Wextra -o testchecker *.cpp
       
     - name: run
       run: ./testchecker
+      
