@@ -9,9 +9,9 @@ Stats Statistics::ComputeStatistics(const std::vector<double>& V) {
 	Stats s;
 	if (V.empty())
 	{
-		s.max = NAN;
-		s.min = NAN;
-		s.average = NAN;
+		s.max = nan("NAN");
+		s.min = nan("NAN");
+		s.average = nan("NAN");
 		
 	}
 	else 
