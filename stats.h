@@ -1,4 +1,3 @@
-#pragma once
 #include <vector>
 
 namespace Statistics {
@@ -18,8 +17,8 @@ namespace Statistics {
 class IAlerter
 {
 public:
-	int emailSent = 1;
-	int ledGlows = 1;
+	int emailSent = 0;
+	int ledGlows = 0;
 
 };
 class EmailAlert:public IAlerter
@@ -30,18 +29,18 @@ class LEDAlert:public EmailAlert
 };
 class StatsAlerter:public LEDAlert
 {
-	float Threshold;
+	double Threshold;
 	std::vector<IAlerter*> obj_ref;
 public:
-	float actualThreshold;
+	double actualThreshold;
 	std::vector<IAlerter*> actualobj_ref;
 
 	StatsAlerter() { }
-	StatsAlerter( float temp, std::vector<IAlerter*> temp2);
+	StatsAlerter( double temp, std::vector<IAlerter*> temp2);
 	
 	StatsAlerter checkAndAlert(const std::vector<double>& V);
 
-	void set1(float temp) {
+	void set1(double temp) {
 		Threshold = temp;
 	}
 	void set2( std::vector<IAlerter*> temp2) {

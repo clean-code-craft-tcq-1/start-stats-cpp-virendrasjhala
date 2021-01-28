@@ -29,7 +29,7 @@ Stats Statistics::ComputeStatistics(const std::vector<double>& V) {
 	return s;
 }
 
-StatsAlerter::StatsAlerter(float temp, std::vector<IAlerter*> temp2)
+StatsAlerter::StatsAlerter(double temp, std::vector<IAlerter*> temp2)
 {
 	set1(temp);
    	set2(temp2);
