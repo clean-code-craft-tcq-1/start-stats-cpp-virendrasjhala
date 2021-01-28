@@ -1,17 +1,17 @@
 #include "stats.h"
 #include <algorithm>
-
+#include <limits>
 using namespace Statistics;
 
 Stats Statistics::ComputeStatistics(const std::vector<double>& V) {
 	//Implement statistics here
-	#define not_a_number NAN
+	
 	Stats s;
 	if (V.empty())
 	{
-		s.max = Not_a_number;
-		s.min = Not_a_number;
-		s.average = Not_a_number;
+		s.max = NAN;
+		s.min = NAN;
+		s.average = NAN;
 		
 	}
 	else 
