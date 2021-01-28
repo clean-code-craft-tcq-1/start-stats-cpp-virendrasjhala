@@ -1,10 +1,11 @@
 #include "stats.h"
 #include <algorithm>
-#define Not_a_number NAN
+
 using namespace Statistics;
 
 Stats Statistics::ComputeStatistics(const std::vector<double>& V) {
 	//Implement statistics here
+	#define not_a_number NAN
 	Stats s;
 	if (V.empty())
 	{
