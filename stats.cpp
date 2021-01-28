@@ -1,5 +1,6 @@
 #include "stats.h"
 #include <algorithm>
+#define Not_a_number NAN
 using namespace Statistics;
 
 Stats Statistics::ComputeStatistics(const std::vector<double>& V) {
@@ -7,9 +8,9 @@ Stats Statistics::ComputeStatistics(const std::vector<double>& V) {
 	Stats s;
 	if (V.empty())
 	{
-		s.max = NAN;
-		s.min = NAN;
-		s.average = NAN;
+		s.max = Not_a_number;
+		s.min = Not_a_number;
+		s.average = Not_a_number;
 		
 	}
 	else 
